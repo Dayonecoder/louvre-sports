@@ -1,0 +1,925 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #d3d3d3;
+  --primary-color: #ff9900; /* You can set your primary color here */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(237, 235, 235);
+}
+
+.landing-page {
+  background: url('images/Screenshot\ 2025-07-15\ 105637.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* push hero section down */
+  color: white;
+}
+
+header {
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+h1.logo {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  flex: none;
+  min-width: 150px;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar-container input[type="search"] {
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  box-shadow: 3px 3px 3px 0.1px black;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.search-bar-container input::placeholder{
+  color: white;
+}
+
+.search-bar-container button {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* push content to the bottom */
+  padding: 40px 50px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.hero-content h2 {
+  font-size: 3.7rem;
+  margin: 20px 0;
+}
+
+.hero-content a.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  border-radius: 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  max-width: 10rem;
+}
+
+.reviews {
+  max-width: 400px;
+}
+
+.testimonials-page{
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+  column-gap: 5px;
+  border-bottom: black;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+}
+
+.testimonials-page-div1, .testimonials-page-div2, .testimonials-page-div3{
+   width: 450px;
+   height: 300px;
+   border-radius: 20px;
+}
+
+
+.testimonials-page-div2{
+   background: url('images/sitting\ basketball\ players.png') no-repeat center center/cover;
+   border: none;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.testimonials-page-div2 div:nth-child(1){
+   height: 20px;
+   padding: 5px;
+   width: 100px;
+   border-radius: 50px;
+   border-style: solid;
+   border-width: 0.1px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-color: white;
+   font-weight: bolder;
+   color: white;
+   font-size: 12px;
+}
+
+.testimonials-page-div2 div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.testimonials-page-div2 div:nth-child(2) h3{
+  color: white;
+  max-width: 250px;
+}
+
+.testimonials-page-div2 div:nth-child(2) div{
+  height: 42px;
+  width: 42px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.testimonials-page-div3{
+   border: none;
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+   row-gap: 20px;
+}
+
+.tpd-thumbnail{
+  background: url('images/footballer.png') no-repeat center center/cover;
+  flex: 3;
+  width: 430px;
+  border-radius: 20px;
+}
+
+.tpd-paragraph{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tpd-paragraph h4{
+  flex: 2;
+}
+
+.tpd-paragraph div:nth-child(1){
+  flex: 2;
+}
+
+.testimonials-navigation{
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.testimonials-navigation div{
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 0.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+
+
+
+
+.testimonials-page-div1{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  border: none;
+}
+
+.testimonials-page-div1 div{
+  width: 70px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.testimonials-page-div1 h3{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.testimonials-page-div1 button{
+  width: 90px;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+}
+
+.offer-page{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  align-items: top;
+}
+
+.offer-page-left{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  flex: 2;
+}
+
+.opl-header{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: end;
+}
+
+.navs-offer-page{
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+
+.competition-nav, .friendly-match-nav{
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 7px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.training-nav{
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 7px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(69, 122, 215);
+}
+
+.opl-hero{
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  column-gap: 20px;
+}
+
+.opl-hero-thumbnail{
+    background: url('images/footballer\ thumbnail.png')
+    no-repeat center center/cover;
+    flex: 1;
+    border-radius: 15px;
+}
+
+.opl-hero-paragraph{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+}
+
+.opl-hero-paragraph h3{
+  font-size: 35px;
+  flex: 1;
+}
+
+.opl-hero-paragraph p{
+  flex: 1;
+}
+
+.opl-hero-paragraph .opl-button{
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.opl-button button{
+  padding: 5px;
+
+}
+
+.opl-hero-footer{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opl-hero-nav{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.opl-hero-nav div{
+  padding: 20px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 100%;
+}
+
+.offer-page-right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: space-around;
+  align-items: end;
+  padding-left: 100px;
+}
+
+.opr-title{
+  flex: 1;
+}
+
+.opr-content{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 35px;
+}
+
+.opr-title h2{
+  font-size: 3.5rem;
+}
+
+.opr-content-thumbnail{
+  background: url('images/golf.png');
+  width: 450px;
+  height: 300px;
+  position: relative;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.opr-plus-sign{
+  position: absolute;
+  bottom: 125px;
+  left: -25px;
+  color: white;
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 17px;
+}
+
+.opr-content-paragraph{
+    flex: 1;
+}
+
+.opr-content-paragraph p span{
+  color: rgb(31, 157, 200);
+}
+
+
+
+
+
+.facilities-page{
+  height: 100vh;
+  background-color: white;
+  margin: 20px;
+  padding: 50px 30px;
+  border-radius: 20px;
+}
+
+.facilities-page-container{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.facilities-page-head, .facilities-page-footer {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facilities-page-footer div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.facilities-page-topic, .facilities-page-search{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.facilities-page-topic div{
+  font-size: 12px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 15px;
+  padding: 4px;
+  max-width: 60px;
+  min-width: 60px;
+  flex: 1;
+}
+
+.facilities-page-topic h3{
+  flex: 3;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+
+.facilities-page-search input{
+  flex: 4;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d3d3d3;
+}
+
+.facilities-page-search input::placeholder{
+  color: black;
+  padding-left: 8px;
+}
+
+.facilities-page-search div{
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-size: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  flex: 1;
+  max-width: 80px;
+  min-width: 80px;
+}
+
+.facilities-page-body{
+  padding: 0;
+  margin: 60px 0px;
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+
+.tennis-court-div{
+  background: url('images/facilities-section-image/tennis.png') no-repeat center center/cover;
+}
+
+.swimming-pool-div{
+  background: url('images/facilities-section-image/swimming\ pool.png') no-repeat center center/cover;
+}
+
+.gymnasium-div{
+  background: url('images/facilities-section-image/gymnasium.png')
+  no-repeat center center/cover;
+}
+
+.basketball-court-div{
+  background:url('images/facilities-section-image/basketball.png')
+  no-repeat center center/cover;
+}
+
+
+.tennis-court-div, .swimming-pool-div, .gymnasium-div, .basketball-court-div{
+  flex: 1;
+  height: 350px;
+  width: 305px;
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.arrow-navigation{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.arrow-navigation div{
+  padding: 20px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 100%;
+}
+
+.real-testimonial-page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 50px;
+}
+
+.rtp-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rtp-title, .rtp-navs{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.rtp-title div:nth-child(1), .rtp-title div:nth-child(2){
+  padding: 5px;
+  border-style: solid;
+  border-width: 0.1px;
+  font-weight: bold;
+  color: black;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.rtp-title div:nth-child(2){
+  background-color: black;
+  color: white;
+}
+
+.left-navs, .right-navs{
+  padding: 20px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 100%;
+}
+
+.rtp-navs{
+  margin-right: 50px;
+}
+
+.rtp-note{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.rtp-note p:nth-child(2){
+  margin-bottom: 10px;
+}
+
+.rtp-hero{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.asterisk{
+  color: lightskyblue;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.rtp-hero-thumbnail{
+  flex: 2;
+  border-style: solid;
+  height: 450px;
+  border-radius: 50px;
+  background: url('images/sportsman.png') no-repeat center center/cover;
+  border: none;
+}
+
+.rtp-hero-paragraph{
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  column-gap: 200px;
+  justify-content: space-between;
+}
+
+.quotation-mark{
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.rtp-hero-paragraph div:nth-child(1){
+  flex: 3;
+}
+
+.rtp-hero-paragraph div:nth-child(2){
+  flex: 2;
+  margin-top: 25px;
+}
+
+.berry-adam{
+  color: lightskyblue;
+}
+
+.rtp-hero-paragraph div:nth-child(1) h3{
+  font-size: 30px;
+}
+
+.one-of-six-div{
+  height: 180px;
+  width: 160px;
+  border-style: solid;
+  position: relative;
+  border-width: 0.1px;
+  border-radius: 15px;
+  background: url('images/sportswoman.png') no-repeat center center/cover;
+  border: none;
+}
+
+.one-of-six{
+  position: absolute;
+  bottom: 0;
+  left: -70;
+}
+
+.current-slide{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.final-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  row-gap: 15px;
+}
+
+.final-section-top-half{
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.fstp-thumbnail{
+  flex: 1;
+  max-height: 220px;
+  max-width: 170px;
+  border-radius: 10px;
+  border: none;
+  background: url('images/Screenshot\ 2025-07-18\ 154635.png') no-repeat center center/cover ;
+}
+
+.fstp-paragraph{
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ row-gap: 15px;
+ color: white;
+}
+
+.fstp-subscribe-div{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.fstp-subscribe, .fstp-newsletter{
+  padding: 4px;
+  border-style: solid;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-width: 0.1px;
+}
+
+.fstp-subscribe{
+  border-color: white;
+  color: white;
+  background-color: black;
+}
+
+.fstp-newsletter{
+  color: black;
+  border-color: white;
+  background-color: white;
+}
+
+.updates-paragraph{
+  font-size: 35px;
+}
+
+.fstp-input{
+  padding: 5px;
+  border-radius: 15px;
+  padding-left: 10px;
+  background-color: grey;
+  min-width:250px;
+}
+
+.fstp-input::placeholder{
+  color: white;
+  font-size: 7px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+footer{
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  background-color: lightskyblue;
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.footer-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+
+}
+
+.footer-note{
+ flex: 3;
+}
+
+.footer-note h3{
+  font-size: 30px;
+}
+
+.button-lancesport{
+  height: 20px;
+  width: 90px;
+  border-radius: 80px;
+  color: black;
+  border: none;
+  margin-top: 15px;
+  border-color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-facilities, .footer-about{
+  line-height: 25px;
+  flex: 1;
+}
+
+.footer-social{
+  line-height: 30px;
+  flex: 1;
+  max-width: 79px;
+}
+
+.footer-social li{
+  padding: 3px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.footer-facilities li:nth-child(1), .footer-about li:nth-child(1), .footer-social li:nth-child(1){
+  border: none;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+
+@media(max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1.logo {
+    margin: 20px 0;
+  }
+
+  .search-bar-container {
+    margin-top: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-content, .reviews {
+    max-width: 100%;
+  }
+}
