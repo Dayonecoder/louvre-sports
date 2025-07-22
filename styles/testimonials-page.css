@@ -1,0 +1,195 @@
+.testimonials-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+  padding-bottom: 50px;
+  border-bottom: 0.1px solid black;
+}
+
+.testimonials-page-div1,
+.testimonials-page-div2,
+.testimonials-page-div3 {
+  width: 450px;
+  height: 300px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.testimonials-page-div1 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.testimonials-page-div1 div {
+  width: 70px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 0.1px solid black;
+}
+
+.testimonials-page-div1 h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.testimonials-page-div1 button {
+  width: 110px;
+  height: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.testimonials-page-div2 {
+  background: url('../images/sitting\ basketball\ players.png') no-repeat center center/cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.testimonials-page-div2 div:nth-child(1) {
+  width: 100px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 0.1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-page-div2 div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonials-page-div2 h3 {
+  max-width: 250px;
+}
+
+.testimonials-page-div2 div:nth-child(2) div {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-page-div3 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
+
+.tpd-thumbnail {
+  background: url('../images/footballer.png') no-repeat center center/cover;
+  width: 100%;
+  height: 180px;
+  border-radius: 20px;
+}
+
+.tpd-paragraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.tpd-paragraph h4 {
+  flex: 2;
+  font-size: 16px;
+}
+
+.testimonials-navigation {
+  display: flex;
+  gap: 5px;
+}
+
+.testimonials-navigation div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0.1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .testimonials-page {
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 20px;
+  }
+
+  .testimonials-page-div1,
+  .testimonials-page-div2,
+  .testimonials-page-div3 {
+    width: 90%;
+  }
+
+  .tpd-thumbnail {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-page {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+  }
+
+  .testimonials-page-div1 h3 {
+    font-size: 18px;
+  }
+
+  .testimonials-page-div1 button {
+    width: 100%;
+  }
+
+  .testimonials-page-div2 h3 {
+    font-size: 16px;
+  }
+
+  .tpd-paragraph {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tpd-paragraph h4 {
+    font-size: 14px;
+  }
+
+  .testimonials-navigation {
+    justify-content: flex-start;
+  }
+
+  .tpd-thumbnail {
+    height: 180px;
+  }
+}

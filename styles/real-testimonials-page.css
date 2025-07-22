@@ -1,0 +1,211 @@
+.real-testimonial-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 50px;
+}
+
+.rtp-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.rtp-title,
+.rtp-navs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.rtp-title div {
+  padding: 5px 10px;
+  border: 0.1px solid black;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.rtp-title div:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+
+.left-navs,
+.right-navs {
+  padding: 12px;
+  border: 0.5px solid black;
+  border-radius: 100%;
+}
+
+.rtp-note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rtp-note p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.asterisk {
+  color: lightskyblue;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.rtp-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.rtp-hero-thumbnail {
+  flex: 1 1 250px;
+  min-height: 300px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50px;
+  background: url('../images/sportsman.png') no-repeat center center/cover;
+  border: none;
+}
+
+.rtp-hero-paragraph {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.rtp-hero-paragraph > div:first-child {
+  flex: 3;
+}
+
+.rtp-hero-paragraph > div:last-child {
+  flex: 2;
+}
+
+.rtp-hero-paragraph h3 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.quotation-mark {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.berry-adam {
+  color: lightskyblue;
+  font-weight: bold;
+}
+
+.one-of-six-div {
+  height: 180px;
+  width: 160px;
+  border-radius: 15px;
+  background: url('../images/sportswoman.png') no-repeat center center/cover;
+  position: relative;
+  border: none;
+}
+
+.one-of-six {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+}
+
+.current-slide {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .real-testimonial-page {
+    padding: 40px 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rtp-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  
+
+  .rtp-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rtp-hero-paragraph {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rtp-hero-paragraph div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rtp-hero-paragraph > div {
+    width: 100%;
+  }
+
+  .one-of-six-div {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+  }
+  
+  .rtp-note{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rtp-navs {
+    margin-right: 0;
+  }
+
+  
+  
+}
+
+/* -------- Mobile Phones (≤ 480px) -------- */
+@media screen and (max-width: 480px) {
+  .rtp-title div {
+    font-size: 9px;
+    padding: 4px 8px;
+  }
+
+  .quotation-mark {
+    font-size: 36px;
+  }
+
+  .rtp-hero-paragraph h3 {
+    font-size: 18px;
+  }
+
+  .updates-paragraph {
+    font-size: 25px;
+  }
+
+  .left-navs, .right-navs {
+    padding: 10px;
+    font-size: 18px;
+  }
+}

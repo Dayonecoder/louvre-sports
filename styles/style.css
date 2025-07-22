@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+*::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --background-color: #d3d3d3;
-  --primary-color: #ff9900; /* You can set your primary color here */
+  --primary-color: #ff9900; 
 }
 
 body {
@@ -15,7 +19,7 @@ body {
 }
 
 .landing-page {
-  background: url('images/Screenshot\ 2025-07-15\ 105637.png') no-repeat center center/cover;
+  background: url('../images/Screenshot\ 2025-07-15\ 105637.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -123,7 +127,7 @@ h1.logo {
 .reviews {
   max-width: 400px;
 }
-
+/* 
 .testimonials-page{
   height: 50vh;
   display: flex;
@@ -286,8 +290,8 @@ h1.logo {
   background-color: black;
   border-radius: 20px;
   border: none;
-}
-
+} */
+/* 
 .offer-page{
   height: 100vh;
   display: flex;
@@ -350,7 +354,7 @@ h1.logo {
 }
 
 .opl-hero-thumbnail{
-    background: url('images/footballer\ thumbnail.png')
+    background: url('../images/footballer\ thumbnail.png')
     no-repeat center center/cover;
     flex: 1;
     border-radius: 15px;
@@ -432,7 +436,7 @@ h1.logo {
 }
 
 .opr-content-thumbnail{
-  background: url('images/golf.png');
+  background: url('../images/golf.png');
   width: 450px;
   height: 300px;
   position: relative;
@@ -465,8 +469,9 @@ h1.logo {
 
 
 
+ */
 
-
+/* 
 .facilities-page{
   height: 100vh;
   background-color: white;
@@ -565,20 +570,20 @@ h1.logo {
 
 
 .tennis-court-div{
-  background: url('images/facilities-section-image/tennis.png') no-repeat center center/cover;
+  background: url('../images/facilities-section-image/tennis.png') no-repeat center center/cover;
 }
 
 .swimming-pool-div{
-  background: url('images/facilities-section-image/swimming\ pool.png') no-repeat center center/cover;
+  background: url('../images/facilities-section-image/swimming\ pool.png') no-repeat center center/cover;
 }
 
 .gymnasium-div{
-  background: url('images/facilities-section-image/gymnasium.png')
+  background: url('../images/facilities-section-image/gymnasium.png')
   no-repeat center center/cover;
 }
 
 .basketball-court-div{
-  background:url('images/facilities-section-image/basketball.png')
+  background:url('../images/facilities-section-image/basketball.png')
   no-repeat center center/cover;
 }
 
@@ -603,8 +608,8 @@ h1.logo {
   border-style: solid;
   border-width: 0.5px;
   border-radius: 100%;
-}
-
+} */
+/* 
 .real-testimonial-page{
   height: 100vh;
   display: flex;
@@ -681,7 +686,7 @@ h1.logo {
   border-style: solid;
   height: 450px;
   border-radius: 50px;
-  background: url('images/sportsman.png') no-repeat center center/cover;
+  background: url('../images/sportsman.png') no-repeat center center/cover;
   border: none;
 }
 
@@ -723,7 +728,7 @@ h1.logo {
   position: relative;
   border-width: 0.1px;
   border-radius: 15px;
-  background: url('images/sportswoman.png') no-repeat center center/cover;
+  background: url('../images/sportswoman.png') no-repeat center center/cover;
   border: none;
 }
 
@@ -736,7 +741,7 @@ h1.logo {
 .current-slide{
   font-weight: bolder;
   font-size: 20px;
-}
+} */
 
 .final-section{
   height: 100vh;
@@ -764,7 +769,7 @@ h1.logo {
   max-width: 170px;
   border-radius: 10px;
   border: none;
-  background: url('images/Screenshot\ 2025-07-18\ 154635.png') no-repeat center center/cover ;
+  background: url('../images/Screenshot\ 2025-07-18\ 154635.png') no-repeat center center/cover ;
 }
 
 .fstp-paragraph{
@@ -820,7 +825,7 @@ h1.logo {
   font-size: 7px;
   font-weight: bold;
   vertical-align: middle;
-}
+} 
 
 footer{
   flex: 5;
@@ -837,11 +842,16 @@ footer{
   flex-direction: row;
   justify-content: space-between;
   align-items: top;
-
+  padding-bottom: 20px;
 }
 
 .footer-note{
  flex: 3;
+}
+
+.footer-note-links{
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-note h3{
@@ -864,6 +874,9 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-top-style: solid;
+  border-top-width: 0.1px;
+  padding: 20px;
 }
 
 .footer-facilities, .footer-about{
@@ -893,10 +906,34 @@ footer{
 
 
 @media(max-width: 768px) {
-  .container {
+  .hero-content h2{
+    font-size: 2rem;
+  }
+
+  .hero-content{
+    flex: 1;
+  }
+
+  .reviews{
+    flex: 1;
+  }
+
+  .container, .facilities-page-body, .facilities-page-head, .facilities-page-footer, .final-section-top-half, .rtp-hero, .footer-bottom, .footer-top {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .footer-top{
+    row-gap: 20px;
+  }
+
+  .footer-bottom{
+    margin-top: 20px;
+  }
+
+  .testimonials-page{
+    flex-direction: row;
   }
 
   nav ul {
@@ -912,14 +949,32 @@ footer{
     margin-top: 15px;
   }
 
+  .facilities-page-topic, .facilities-page-search, .rtp-title, .rtp-navs, .fstp-subscribe-div { flex-direction: column; gap: 0.625rem; }
+
+  .tennis-court-div, .swimming-pool-div, .gymnasium-div, .basketball-court-div, .rtp-hero-thumbnail, .one-of-six-div, .fstp-thumbnail { max-width: 100%; height: auto; flex: 1 1 100%; }
+
   .hero {
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     text-align: center;
     padding: 20px;
   }
 
+  .btn-primary{
+  padding: 5px 10px;
+
+  }
+
   .hero-content, .reviews {
     max-width: 100%;
+  }
+
+  .reviews p{
+    font-size: 12px;
+  }
+
+  .final-section{
+    margin-bottom: 50px;
   }
 }
