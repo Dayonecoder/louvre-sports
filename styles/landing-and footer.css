@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #d3d3d3;
+  --primary-color: #ff9900; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(237, 235, 235);
+}
+
+.landing-page {
+  background: url('../images/Screenshot\ 2025-07-15\ 105637.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  color: white;
+}
+
+header {
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+h1.logo {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  flex: none;
+  min-width: 150px;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar-container input[type="search"] {
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  box-shadow: 3px 3px 3px 0.1px black;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.search-bar-container input::placeholder{
+  color: white;
+}
+
+.search-bar-container button {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+  padding: 40px 50px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.hero-content h2 {
+  font-size: 3.7rem;
+  margin: 20px 0;
+}
+
+.hero-content a.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  border-radius: 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  max-width: 10rem;
+}
+
+.reviews {
+  max-width: 400px;
+}
+
+.final-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  row-gap: 15px;
+}
+
+.final-section-top-half{
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.fstp-thumbnail{
+  flex: 1;
+  max-height: 220px;
+  max-width: 170px;
+  border-radius: 10px;
+  border: none;
+  background: url('../images/Screenshot\ 2025-07-18\ 154635.png') no-repeat center center/cover ;
+}
+
+.fstp-paragraph{
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ row-gap: 15px;
+ color: white;
+}
+
+.fstp-subscribe-div{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.fstp-subscribe, .fstp-newsletter{
+  padding: 4px;
+  border-style: solid;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-width: 0.1px;
+}
+
+.fstp-subscribe{
+  border-color: white;
+  color: white;
+  background-color: black;
+}
+
+.fstp-newsletter{
+  color: black;
+  border-color: white;
+  background-color: white;
+}
+
+.updates-paragraph{
+  font-size: 35px;
+}
+
+.fstp-input{
+  padding: 5px;
+  border-radius: 15px;
+  padding-left: 10px;
+  background-color: grey;
+  min-width:250px;
+}
+
+.fstp-input::placeholder{
+  color: white;
+  font-size: 7px;
+  font-weight: bold;
+  vertical-align: middle;
+} 
+
+footer{
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  background-color: lightskyblue;
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.footer-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  padding-bottom: 20px;
+}
+
+.footer-note{
+ flex: 3;
+}
+
+.footer-note-links{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-note h3{
+  font-size: 30px;
+}
+
+.button-lancesport{
+  height: 20px;
+  width: 90px;
+  border-radius: 80px;
+  color: black;
+  border: none;
+  margin-top: 15px;
+  border-color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-style: solid;
+  border-top-width: 0.1px;
+  padding: 20px;
+}
+
+.footer-facilities, .footer-about{
+  line-height: 25px;
+  flex: 1;
+}
+
+.footer-social{
+  line-height: 30px;
+  flex: 1;
+  max-width: 79px;
+}
+
+.footer-social li{
+  padding: 3px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.footer-facilities li:nth-child(1), .footer-about li:nth-child(1), .footer-social li:nth-child(1){
+  border: none;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+
+@media(max-width: 768px) {
+  .hero-content h2{
+    font-size: 2rem;
+  }
+
+  .hero-content{
+    flex: 1;
+  }
+
+  .reviews{
+    flex: 1;
+  }
+
+  .container, .facilities-page-body, .facilities-page-head, .facilities-page-footer, .final-section-top-half, .rtp-hero, .footer-bottom, .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-top{
+    row-gap: 20px;
+  }
+
+  .footer-bottom{
+    margin-top: 20px;
+  }
+
+  .testimonials-page{
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1.logo {
+    margin: 20px 0;
+  }
+
+  .search-bar-container {
+    margin-top: 15px;
+  }
+
+  .facilities-page-topic, .facilities-page-search, .rtp-title, .rtp-navs, .fstp-subscribe-div { flex-direction: column; gap: 0.625rem; }
+
+  .tennis-court-div, .swimming-pool-div, .gymnasium-div, .basketball-court-div, .rtp-hero-thumbnail, .one-of-six-div, .fstp-thumbnail { max-width: 100%; height: auto; flex: 1 1 100%; }
+
+  .hero {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .btn-primary{
+  padding: 5px 10px;
+
+  }
+
+  .hero-content, .reviews {
+    max-width: 100%;
+  }
+
+  .reviews p{
+    font-size: 12px;
+  }
+
+  .final-section{
+    margin-bottom: 50px;
+  }
+}

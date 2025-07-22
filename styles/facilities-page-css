@@ -135,7 +135,6 @@
   border-radius: 100%;
 }
 
-/* Tablets */
 @media (max-width: 1024px) {
   .facilities-page-body {
     gap: 20px;
@@ -169,7 +168,7 @@
   }
 }
 
-/* Phones */
+
 @media (max-width: 600px) {
   .facilities-page-body {
     flex-direction: column;

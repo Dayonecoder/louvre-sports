@@ -185,7 +185,7 @@
   
 }
 
-/* -------- Mobile Phones (≤ 480px) -------- */
+
 @media screen and (max-width: 480px) {
   .rtp-title div {
     font-size: 9px;
