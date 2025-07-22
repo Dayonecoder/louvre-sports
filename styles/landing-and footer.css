@@ -332,6 +332,7 @@ footer{
 
   .search-bar-container {
     margin-top: 15px;
+    flex-direction: column;
   }
 
   .facilities-page-topic, .facilities-page-search, .rtp-title, .rtp-navs, .fstp-subscribe-div { flex-direction: column; gap: 0.625rem; }
